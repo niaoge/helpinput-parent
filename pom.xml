@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.helpinput.hi</groupId>
+	<artifactId>helpinput-parent</artifactId>
+	<version>1.2.3</version>
+	<packaging>pom</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<springVersion>3.2.4.RELEASE</springVersion>
+		<hiVersion>${parent.version}</hiVersion>
+		<mongoVer>20140124</mongoVer>
+		<jsfVersion>2.2.7</jsfVersion>
+	</properties>
+	<repositories>
+		<repository>
+			<id>cpdetector-id</id>
+			<name>cpdetector-name</name>
+			<url>http://maven.nuiton.org/nexus/content/groups/releases/</url>
+		</repository>
+		<repository>
+			<id>prime-repo</id>
+			<name>PrimeFaces Maven Repository</name>
+			<url>http://repository.primefaces.org</url>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.codehaus.groovy</groupId>
+				<artifactId>groovy-all</artifactId>
+				<version>2.1.6</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
